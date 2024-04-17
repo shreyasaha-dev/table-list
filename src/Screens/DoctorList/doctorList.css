@@ -126,6 +126,9 @@
     padding: 10px 0 10px 8px !important;
     font-size: 15px;
   }
+  .pagination {
+    margin-left: 470px;
+  }
 }
 @media only screen and (max-width: 320px) {
   .list-header {
