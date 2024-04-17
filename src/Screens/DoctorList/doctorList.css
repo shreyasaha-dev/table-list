@@ -1,0 +1,124 @@
+.total-list {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+.list-middle-section {
+  width: 100%;
+  box-shadow: 0 0 20px lightgray;
+}
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+}
+.list-header > input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid green;
+}
+.list-header > button {
+  padding: 10px 15px;
+  color: white;
+  background-color: green;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 2px solid green;
+}
+.list-header > button:hover {
+  color: green;
+  background-color: white;
+  border: 2px solid green;
+}
+.table-section > table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.no-data-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100% !important;
+}
+.no-data {
+  margin: 20px;
+  text-align: center;
+  color: gray;
+  font-size: 18px;
+}
+.table-section > table > thead > tr > th {
+  border-top: 1px solid #dddddd;
+  text-align: center;
+  padding: 20px;
+  color: rgb(85, 83, 83);
+  /* font-size: 18px; */
+  background-color: rgb(217, 237, 245);
+}
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+
+.pagination li {
+  display: inline-block; /* Display all list items */
+}
+
+.pagination li a {
+  color: #333;
+  /* padding: 8px 12px; */
+  /* border: 1px solid #ccc; */
+  cursor: pointer;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.pagination li a:hover {
+  background-color: #f2f2f2;
+}
+
+.pagination .pagination-arrow {
+  color: #333;
+}
+
+.paginationDisabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 450px) {
+  .total-list {
+    padding: 0;
+  }
+  .list-middle-section {
+    width: 100%;
+    box-shadow: none;
+  }
+  .table-section > table > thead > tr > th {
+    padding: 15px;
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .total-list {
+    padding: 0;
+  }
+  .list-middle-section {
+    width: 100%;
+    box-shadow: none;
+  }
+  .table-section > table > thead > tr > th {
+    padding: 15px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,73 @@
+.total-row > td {
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+  padding: 10px 0;
+  color: gray;
+  max-width: 90px;
+  overflow: hidden;
+  /* font-size: 18px; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.total-row > td > button {
+  padding: 10px 3px;
+  background-color: white;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: gray;
+  transition: 0.3s;
+  margin: 0 8px;
+}
+.edit:hover {
+  color: rgb(5, 19, 206);
+}
+.delete:hover {
+  color: rgb(194, 7, 7);
+}
+.total-row > td > button {
+  background: transparent;
+}
+.total-row:nth-child(even) {
+  background-color: rgb(241, 246, 250);
+}
+@media only screen and (max-width: 1024px) {
+  .total-row > td {
+    max-width: 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .total-row > td {
+    max-width: 70px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .total-row {
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .total-row > td {
+    padding: 10px 5px !important;
+    font-size: 13px;
+  }
+  .total-row > td > button {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .total-row {
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .total-row > td {
+    padding: 10px 5px;
+    font-size: 13px;
+    max-width: 90px;
+  }
+  .total-row > td > button {
+    font-size: 15px;
+  }
+}
