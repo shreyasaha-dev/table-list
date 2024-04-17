@@ -110,6 +110,11 @@
     width: 100%;
     box-shadow: none;
   }
+  .list-header > button {
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 140px;
+  }
   .table-section > table > thead > tr > th {
     padding: 15px;
     font-size: 13px;
