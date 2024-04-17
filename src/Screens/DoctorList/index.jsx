@@ -107,17 +107,19 @@ const DoctorList = () => {
               <p className="no-data">No Data Yet</p>
             </div>
           )}
-          <ReactPaginate
-            pageCount={pageCount}
-            onPageChange={changePage}
-            previousLabel={"◄"}
-            nextLabel={"►"}
-            containerClassName={"pagination"}
-            previousLinkClassName={"pagination-arrow"}
-            nextLinkClassName={"pagination-arrow"}
-            disabledClassName={"paginationDisabled"}
-            activeClassName={"paginationActive"}
-          />
+          {createData.length !== 0 && (
+            <ReactPaginate
+              pageCount={pageCount}
+              onPageChange={changePage}
+              previousLabel={"◄"}
+              nextLabel={"►"}
+              containerClassName={"pagination"}
+              previousLinkClassName={"pagination-arrow"}
+              nextLinkClassName={"pagination-arrow"}
+              disabledClassName={"paginationDisabled"}
+              activeClassName={"paginationActive"}
+            />
+          )}
         </div>
       </div>
     </div>
